@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>仓库与销售管理系统 修改客户</title>
+</head>
+<body>
+<form action="/alterCustomer" method="post">
+    <label>姓名
+        <input type="text" name="name" th:value="${customer.nameCustomer}">
+    </label><br>
+    <label>性别
+        <input type="text" name="sex" th:value="${customer.sexCustomer}">
+    </label><br>
+    <label>地址
+        <input type="text" name="address" th:value="${customer.address}">
+    </label><br>
+    <label>电话
+        <input type="text" name="phone" th:value="${customer.phone}">
+    </label><br>
+    <input type="submit" value="修改">
+</form>
+</body>
+</html>
